@@ -16,17 +16,20 @@
 		<label for="gender">Gender</label>
 		<input type="radio" id="gender_m" name="gender"><label>Male</label>
 		<input type="radio" id="gender_f" name="gender"><label>Female</label><br>
-		<label for="car_brand">Car Brands</label>
-		<select id="cars" required>
-			<option  value="disabled selected">--Please choose an option--</option>
+		 <label for="cars">Car Brands:</label>
+		<select id="cars" name="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
 			<option value="audi">Audi</option>
+		    <option value="bmw">BMW</option>
+		    <option value="tesla">Tesla</option>
+		    <option value="toyota">Toyota</option>
 		</select><br>
 		<label for="age">Age</label><input id=age type="number" placeholder="Age" required><br>
-		<label for="dob">DOB</label><input id="dob" type="date"><br>
-		<label for="phone_number">Phone Number</label><input id="tel" type="tel" placeholder="xxx-xxx-xxxx" required><br>
+		<label for="dob">DOB</label><input  type="date" id="dob" name="dob" required><br>
+		<label for="phone_number">Phone Number</label><input id="tel" type="tel" placeholder="xxx-xxx-xxxx"><br>
 		<label for="password">Password</label><input id="password" type="password" placeholder="Password" required><br>
-		<label for="agree_quote">I agree to the TOS</label><input id="tos" type="checkbox"><br>
-		<input type="submit">
+		<label for="agree_quote">I agree to the TOS</label><input id="tos" type="checkbox" required><br>
+		<button type="submit">Submit</button>
 		
 	</form>
     <script type="text/javascript" src="./script.js">
